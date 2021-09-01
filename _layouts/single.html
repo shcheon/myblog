@@ -53,10 +53,10 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% include page__date.html %}
+      </footer>
         {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
           {% include comments.html %}
         {% endif %}
-      </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
