@@ -7,7 +7,6 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     <span class="nav__sub-title">Total : {{sum}}</span>
-    change
     {% for category in site.categories %}
     <li>
       <a href={{ category[0] | slugify }}><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
