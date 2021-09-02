@@ -275,4 +275,6 @@ defaults:
       type: home
     values:
       sidebar:
-        nav: "docs"       
+      layout: home
+        nav: "docs"
+        
