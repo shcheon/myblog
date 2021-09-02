@@ -10,33 +10,46 @@ main:
     url: /tags/
     
 docs:
-  - title: Machine Learning
+  - title: Getting Started
     children:
-      - title: "내 데이터로 CNN 돌려보기"
-        url: /_pages/cnn/
-      - title: "내 데이터로 ResNet 돌려보기"
-        url: /_pages/resnet/
-      - title: "AWS Sagemaker에서 ResNet 돌려보기"
-        url: /_pages/sagemaker/
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
 
-  - title: Algorithm
+  - title: Customization
     children:
       - title: "Configuration"
         url: /docs/configuration/
+      - title: "Navigation"
+        url: /docs/navigation/
+      - title: "UI Text"
+        url: /docs/ui-text/
+      - title: "Authors"
+        url: /docs/authors/
+      - title: "Layouts"
+        url: /docs/layouts/
 
-  - title: Server
+  - title: Content
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
+      - title: "Working with Posts"
+        url: /docs/posts/
+      - title: "Working with Pages"
+        url: /docs/pages/
+      - title: "Working with Collections"
+        url: /docs/collections/
+      - title: "Helpers"
+        url: /docs/helpers/
+      - title: "Utility Classes"
+        url: /docs/utility-classes/
 
-  - title: iOS
+  - title: Extras
     children:
-      - title: "[Swift] 네비게이션 바, 화면 이동"
-        url: /_pages/swift1/
-      - title: "[Swift] 웹뷰(WKWebView), 옵셔널 바인딩(optional binding)"
-        url: /_pages/swift2/
-
-  - title: Python
-    children:
-      - title: "Configuration"
-        url: /docs/configuration/
+      - title: "Stylesheets"
+        url: /docs/stylesheets/
+      - title: "JavaScript"
+        url: /docs/javascript/
