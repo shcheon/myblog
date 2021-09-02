@@ -269,4 +269,4 @@ defaults:
       related: true
       comments: true         
     sidebar:
-      nav : "main"
+      nav : "sidebar-sample"
