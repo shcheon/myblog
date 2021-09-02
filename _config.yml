@@ -256,10 +256,6 @@ compress_html:
   ignore:
     envs: development
 
-# Defaults
-sidebar:
-  nav: "docs"
-
 defaults:
   # _posts
   - scope:
