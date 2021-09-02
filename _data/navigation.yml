@@ -9,7 +9,7 @@ main:
   - title: "Tags"
     url: /tags/
     
-custom-sidebar:
+docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
