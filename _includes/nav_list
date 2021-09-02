@@ -9,7 +9,7 @@
     <span class="nav__sub-title">Total : {{sum}}</span>
     {% for category in site.categories %}
     <li>
-      <a href="{{ category.url }}"><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
+      <a href="{{ category.title }}"><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
     </li>
     {% endfor %}
     
