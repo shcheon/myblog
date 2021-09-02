@@ -270,3 +270,9 @@ defaults:
       toc: true    
       sidebar:
         nav: "docs"
+  - scope:
+      path: ""
+      type: home
+    values:
+      sidebar:
+        nav: "docs"       
