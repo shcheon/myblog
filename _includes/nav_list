@@ -7,9 +7,10 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     <span class="nav__sub-title">Total : {{sum}}</span>
+    aaa
     {% for category in site.categories %}
     <li>
-      <a href={{category[0] | relative_url | downcase | prepand : "categories/#" }}><span class="nav__sub-title">{{ category[0] | uppercase }} ({{ category[1].size }})</span></a>
+      <a href={{category[0] | relative_url | prepand : "categories/#" }}><span class="nav__sub-title">{{ category[0] | uppercase }} ({{ category[1].size }})</span></a>
     </li>
     {% endfor %}  
     {% for nav in navigation %}
