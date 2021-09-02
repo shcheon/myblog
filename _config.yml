@@ -268,3 +268,5 @@ defaults:
       related: true
       comments: true
       toc: false
+    sidebar:
+      nav : "custom-sidebar"
