@@ -11,7 +11,7 @@
     </li>
     
     {% for category in site.categories %}
-      <ul><a href="{{ post.url }}">{{ category[0] }} ({{ category[0].size }})</a></ul>
+      <ul><a href="{{ post.url }}">{{ category[0] }} ({{ category[1].size }})</a></ul>
     {% endfor %}
     
     {% for nav in navigation %}
