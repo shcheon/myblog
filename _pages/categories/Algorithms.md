@@ -1,7 +1,7 @@
 ---
 title: "Algorithms"
 layout: archive
-permalink: /category/
+permalink: /categories/
 author_profile: true
 sidebar:
   nav: "docs"
