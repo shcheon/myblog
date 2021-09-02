@@ -11,8 +11,7 @@
     <li>
       <a href="abcde"><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
     </li>
-    {% endfor %}
-    
+    {% endfor %}  
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
