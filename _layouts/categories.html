@@ -17,9 +17,11 @@ sidebar:
     {% for category in site.categories %}
       {% if category[1].size == i %}
         <li>
+          {% comments %}
           <a href="#{{ category[0] | slugify }}">
             <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
+          {% endcomments %}
         </li>
       {% endif %}
     {% endfor %}
@@ -33,11 +35,9 @@ sidebar:
       <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ entries_layout }}">
-          {% comment %}
           {% for post in category.last %}
             {% include archive-single.html type=entries_layout %}
           {% endfor %}
-          {% endcomment %}
         </div>
         <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
       </section>
