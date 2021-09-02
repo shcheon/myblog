@@ -6,10 +6,10 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
-    <h1> Total : {{sum}} </h1>
+    <h3> Total : {{sum}} </h3>
     
     {% for category in site.categories %}
-      <h1><a href="{{ post.url }}">{{ category[0] }} ({{ category[1].size }})</a></h1>
+      <h3><a href="{{ post.url }}">{{ category[0] }} ({{ category[1].size }})</a></h3>
     {% endfor %}
     
     {% for nav in navigation %}
