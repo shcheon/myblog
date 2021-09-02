@@ -266,4 +266,5 @@ defaults:
       author_profile: true
       share: true
       related: true
-      comments: true         
+      comments: true
+      toc: true
