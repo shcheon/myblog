@@ -271,18 +271,3 @@ defaults:
       toc: true    
       sidebar:
         nav: "docs"
-        
-  - scope:
-      path: ""
-      type: categories
-    values:
-      sidebar:
-        nav: "docs"
-
-  - scope:
-      path: ""
-      type: tags
-    values:
-      sidebar:
-        nav: "docs"
-
