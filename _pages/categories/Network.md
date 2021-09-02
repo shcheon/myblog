@@ -1,9 +1,9 @@
 ---
-title: "Algorithms"
+title: "Network"
 layout: archive
-permalink: /categories/algorithms/
+permalink: /categories/network/
 author_profile: true
-category : Algorithms
+category : Network
 sidebar:
   nav: "docs"
 ---

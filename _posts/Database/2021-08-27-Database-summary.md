@@ -2,7 +2,7 @@
 title: "Database 정리"
 last_modified_at: 2021-08-27
 categories:
-  - Blog
+  - Database
 tags:
 ---
 

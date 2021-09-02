@@ -1,9 +1,9 @@
 ---
-title: "Algorithms"
+title: "Operating System"
 layout: archive
-permalink: /categories/algorithms/
+permalink: /categories/operatingsystem/
 author_profile: true
-category : Algorithms
+category : OperatingSystem
 sidebar:
   nav: "docs"
 ---

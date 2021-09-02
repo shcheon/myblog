@@ -1,9 +1,9 @@
 ---
-title: "Algorithms"
+title: "Database"
 layout: archive
-permalink: /categories/algorithms/
+permalink: /categories/database/
 author_profile: true
-category : Algorithms
+category : Database
 sidebar:
   nav: "docs"
 ---

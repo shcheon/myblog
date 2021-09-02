@@ -9,9 +9,9 @@
     <span class="nav__sub-title">Total Posts : {{sum}}</span>
     {% for category in site.categories %}
     <li>
-      <a href="{{ site.baseurl }}/category/{{ category[0] | slugify | downcase }}"><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
+      <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify | downcase }}"><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
     </li>
-    {% endfor %}  
+    {% endfor %}
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
