@@ -10,7 +10,7 @@
     change
     {% for category in site.categories %}
     <li>
-      <a href=#{{ category[0] | slugify }}><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
+      <a href={{ category[0] | slugify }}><span class="nav__sub-title">{{ category[0] }} ({{ category[1].size }})</span></a>
     </li>
     {% endfor %}  
     {% for nav in navigation %}
