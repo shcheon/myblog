@@ -267,6 +267,6 @@ defaults:
       share: true
       related: true
       comments: true
-      toc: true
-    sidebar:
-      nav: "docs"
+      toc: true    
+      sidebar:
+        nav: "docs"
