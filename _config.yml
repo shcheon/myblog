@@ -274,7 +274,7 @@ defaults:
       path: ""
       type: home
     values:
-      sidebar:
       layout: home
+      sidebar:
         nav: "docs"
         
