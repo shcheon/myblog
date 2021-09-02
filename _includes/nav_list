@@ -7,8 +7,18 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     <li>
-        전체 글 수 : {{sum}}
+        Total : {{sum}}
     </li>
+    
+    {% for category in site.categories %}
+      <h3>{{ category[0] }}</h3>
+      <ul>
+        {% for post in category[1] %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+    
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
@@ -20,7 +30,7 @@
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{category[1].size}})</a></li>
           {% endfor %}
         </ul>
         {% endif %}
