@@ -268,6 +268,21 @@ defaults:
       share: true
       related: true
       comments: true
-      toc: true    
+      toc: true
       sidebar:
         nav: "docs"
+
+  - scope:
+      path: ""
+      type: home
+    values:
+      layout: home
+      share: true
+      related: true
+      author_profile: true
+      sidebar:
+        nav: "docs"
+        
+        
+        
+        
