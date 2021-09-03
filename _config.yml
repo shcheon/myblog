@@ -257,8 +257,6 @@ compress_html:
   ignore:
     envs: development
 
-date_format: "%Y.%m.%d"
-
 defaults:
   # _posts
   - scope:
@@ -271,7 +269,6 @@ defaults:
       related: true
       comments: true
       toc: true
-      show_date: true
       sidebar:
         nav: "docs"
   - scope:
