@@ -274,18 +274,17 @@ defaults:
       show_date: true
       sidebar:
         nav: "docs"
-
   - scope:
+  # _pages
       path: ""
-      type: home
+      type: pages
     values:
-      layout: home
+      layout: single
       share: true
       related: true
       author_profile: true
       sidebar:
-        nav: "docs"
-        
+        nav: "docs"      
         
         
         
