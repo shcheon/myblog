@@ -1,5 +1,5 @@
 ---
-title: [토이 프로젝트] 검색 포탈 만들기
+title: [ToyProject]
 last_modified_at: 2021-09-09
 categories: 
   - ToyProjects
