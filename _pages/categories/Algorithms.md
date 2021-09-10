@@ -3,7 +3,7 @@ title: "Algorithms"
 layout: archive
 permalink: /categories/algorithms/
 author_profile: true
-category : Web
+category : Algorithms
 sidebar:
   nav: "docs"
 ---
