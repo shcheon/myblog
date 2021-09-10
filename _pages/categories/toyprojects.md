@@ -1,10 +1,4 @@
 ---
-
----
-
-{% include archive-category.html %}
-
----
 title: "ToyProjects"
 layout: archive
 permalink: /categories/toyprojects/
