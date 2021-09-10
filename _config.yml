@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "S.H.Cheon"
   avatar           : #"/assets/images/bio-photo.jpg"
-  bio              : "Welcome to Cheon's Blog."
+  bio              : "Today I Learned."
   location         : "Somewhere"
   links:
     - label: "Email"
