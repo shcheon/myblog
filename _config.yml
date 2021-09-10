@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Cheon's Blog"
+title                    : "Study Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "S.H.Cheon"
-description              : "Welcome to Cheon's Blog."
+name                     : "S.H. Cheon"
+description              : "Today I Learned"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/myblog" # the subpath of your site, e.g. "/blog"
 repository               : "shcheon/myblog"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
