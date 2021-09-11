@@ -1,4 +1,12 @@
-# 파이썬 초간단 요약
+---
+title: 파이썬 문법 정리
+last_modified_at: 2021-09-11
+categories: 
+  - Programming
+tags:
+  - python
+---
+# 파이썬 문법 정리
 
 ## 용어
 
