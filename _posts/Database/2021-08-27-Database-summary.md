@@ -1,5 +1,5 @@
 ---
-title: "Database 정리"
+title: "Oracle Database 이해"
 last_modified_at: 2021-08-27
 categories:
   - Database
@@ -8,78 +8,33 @@ tags:
 
 ## Database
 
-- 데이터베이스
-  - 데이터베이스를 사용하는 이유
-  - 데이터베이스 성능
-- Index
-  - Index 란 무엇인가
-  - Index 의 자료구조
-  - Primary index vs Secondary index
-  - Composite index
-  - Index 의 성능과 고려해야할 사항
-- 정규화에 대해서
-  - 정규화 탄생 배경
-  - 정규화란 무엇인가
-  - 정규화의 종류
-  - 정규화의 장단점
-- Transaction
-  - 트랜잭션(Transaction)이란 무엇인가?
-  - 트랜잭션과 Lock
-  - 트랜잭션의 특성
-  - 트랜잭션의 상태
-  - 트랜잭션을 사용할 때 주의할 점
-- Statement vs PreparedStatement
+Oracle Database 구조
 
-## NoSQL
+# 오라클 메모리 구조
+- PGA =Program Global Area = 서버 프로세스에게 할당되는 메모리
+- 용도 : 유저로부터 요청받은 작업을 처리하는데 사용되는 메모리 영역
+- SGA = System Global Area = 프로세스 전체 간 공유되는 메모리
+- 데이터를 디스크로부터 읽어 메모리로 적재한 후 Read/Write/Update/Delete하는데 활용할 떄 사용되는 메모리 공간
 
-- 정의
-- CAP 이론
-  - 일관성
-  - 가용성
-  - 네트워크 분할 허용성
-- 저장방식에 따른 분류
-  - Key-Value Model
-  - Document Model
-  - Column Model
+# PGA 구성
+- 정렬 공간 (Sort Area) : Order by, Group by 수행 시 정렬할 때 사용되는 공간, 메모리 부족 시 디스크 공간 활용
+- 세션 정보 (Session Information) : 서버 <-> 유저 연결 정보
+- 커서 상태 정보(Cursor State) : SQL 파싱 정보가 저장되어 있는 주소
+- 변수 저장 공간 (Stack Area) : Bind 변수를 저장하는 공간
+- 유저 프로세스 -> 서버 프로세스 -> PGA 로 할당
 
-## Oracle Database
+# SGA 구성 (중요)
+- 공유풀(Shared Pool)
+- 고정 영역(Permanent Area) : SGA를 관리하는 파라메터 정보
+- 동적 영역(Dynamic  Area) : 라이브러리 캐쉬(SQL, Parse Tree, 실행계획을 저장), 데이터 딕셔너리 캐쉬 (Oracle Object 정보를 저장)
+- 데이터 버퍼 캐쉬 (Data Buffer Cache) : 디스크에서 읽어온 데이터를 저장하는 공간
+- 서버 프로세스 : 디스크 -> 데이터 버퍼 캐쉬에로 데이터를 저장하는 프로세스
+- DBWR(Database Writer) Background Process : 데이터 버퍼 캐쉬 -> 디스크로 데이터를 기록하는 프로세스
+- 리두 로그 버퍼(Redo Log Buffer) : 데이터 변경에 대한 로그를 저장하는 영역
+- LGWR (Log Writer) : 로그 버퍼의 내용을 로그 파일에 기록하는 프로세스 (Commit 수행 시, DBWR에 의해 DIsk로 바로 기록되지 않고, Redo Log File에 기록해둔 뒤, 일괄적으로 Log File의 내용을 기준으로 Disk에 실제 데이터를 기록함, 유저 입장에서는 Commit 실행 시, Disk에 기록된 것으로 생각할 수 있음)
+- 대형 풀 (Large Pool), 자바 풀 (Java Pool)
 
-- SQL 처리 순서
-
-  - **1. FROM> 2.** **WHERE****> 3.** **GROUP BY****> 4.** **HAVING** **> 5.** **SELECT** **> 6. ORDER BY**
-
-    [참조](https://mine-it-record.tistory.com/66)
-
-- Data Structure
-
-  - 인덱스
-  - B*Tree
-  - Bitmap
-
-- 정규화
-
-- 트랜잭션
-
-  
-
-## SQL Lite
-
-- 
-
-
-
-## MySQL
-
-- 
-
-
-
-## SQL Tuning
-
-- I/O 최소화
-- 인덱스 튜닝
-- 조인튜닝
-- 소트 튜닝
-- SQL 옵티마이저
-- 파티션 튜닝
+# SQL SELECT 쿼리 실행순서
+- FROM > WHERE > GROUP BY > HAVING > SELECT > ORDER BY
+- 실행 순서로 인하여 ALIAS 는 주로 FROM에서 지정해주어야 WHERE, GROUP BY, HAVING에서 사용 가능.
 
