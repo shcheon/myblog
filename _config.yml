@@ -98,7 +98,7 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-X51EF7G2QG"
+    tracking_id          : "UA-210284458-1"
     anonymize_ip         :  false (default)
 
 
