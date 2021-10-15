@@ -400,7 +400,7 @@ public interface Observer {
 public class ConcreteObserverA implements Observer {
 	@Override
 	public void notify(String message) {
-		System.out.println("ConcreteObserser A is received message : " + message);
+		System.out.println("ConcreteObserver A is received message : " + message);
 		
 	}
 }
@@ -409,7 +409,7 @@ public class ConcreteObserverA implements Observer {
 public class ConcreteObserverB implements Observer {
 	@Override
 	public void notify(String message) {
-		System.out.println("ConcreteObserser B is received message : " + message);
+		System.out.println("ConcreteObserver B is received message : " + message);
 	}
 }
 
@@ -456,8 +456,8 @@ public void TestObserver()
 }
 
 <Console>
-ConcreteObserser A is received message : Hello. Everyone
-ConcreteObserser B is received message : Hello. Everyone
+ConcreteObserver A is received message : Hello. Everyone
+ConcreteObserver B is received message : Hello. Everyone
 ```
 
 
