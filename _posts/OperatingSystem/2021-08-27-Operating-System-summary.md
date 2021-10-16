@@ -19,7 +19,7 @@ tags:
   - 유저 : 어플리케이션 프로그램을 사용하는 사람
   - **운영체제 : 하드웨어 자원을 어플리케이션에게 적절히 배분해주는 수단** 
 
-![image-20211016201810149](C:\Users\천승현\AppData\Roaming\Typora\typora-user-images\image-20211016201810149.png)
+![image](https://user-images.githubusercontent.com/80370113/137588010-0d095534-55f5-4570-b9ba-300ca849839d.png)
 
 - 유저 관점에서의 운영체제는인터페이스에 따라 정의가 달라짐 ex ) 터치스크린, 음성인식 등 유저에겐 OS로 정의
 - 시스템 관점에서의 운영체제는 자원 할당자(Resource Allocator)가 됨 ex) CPU, I/O, 메모리 공간 관리
@@ -35,10 +35,11 @@ tags:
 
 - 컴퓨터 시스템은 CPU, Memory, Keyboard 등 각각의 요소가 있고, 이를 Bus를 통해 이어주고, 장치를 통제하기 위한 디바이스 드라이버가 존재함
 
-![image-20211016205556166](C:\Users\천승현\AppData\Roaming\Typora\typora-user-images\image-20211016205556166.png)
+![image](https://user-images.githubusercontent.com/80370113/137588033-7757d2d0-bd4b-4d2d-bb88-8ff8c0177a18.png)
 
-- 인터럽트 (Interrupt) ![image-20211016210832712](C:\Users\천승현\AppData\Roaming\Typora\typora-user-images\image-20211016210832712.png)
+- 인터럽트 (Interrupt)
 
+![image](https://user-images.githubusercontent.com/80370113/137588045-e030443b-be11-4914-92fd-2cf3ac6a8327.png)
 
 
 ## 1.3 컴퓨터 시스템 구성 (Computer-System Architecture)
