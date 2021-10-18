@@ -54,7 +54,9 @@ tags: OS, Interrupt
 
 - Interrupt 동작 방식 : CPU가 유저 프로그램 실행 도중 인터럽트 신호가 발생하면, Interrupt Vector를 참조하여 Interrupt Service Routine 을 찾아서 실행한 후 인터럽트 처리가 완료되면, 다시 실행하던 유저프로그램을 실행함 **(비동기 Events 처리)**
 
-- Interrupt 종류마다 우선순위를 부여하여 먼저 실행해야 할 대상을 정할 수 있음
+- 중요 처리작업 진행중일 때, 인터럽트 발생할 경우 ? 즉시 처리용 인터럽트, 후순위 처리 인터럽트를 구분하여 처리, 우선순위를 부여하여 처리
+
+- 여러 장치로부터 인터럽트 요청이 왔을 때, 모든 인터럽트 처리 루틴을 다 확인 해야하는가 ? 인터럽트 벡트 테이블 이용, Chainning 구조로 처리 루틴 실행
 
 ![image](https://user-images.githubusercontent.com/80370113/137736563-7b8839a0-c9e4-41d7-9b85-e4edcc3b0635.png)
 
