@@ -3,11 +3,8 @@ title: "Operating System 정리"
 last_modified_at: 2021-10-16
 categories:
   - OperatingSystem
-tags:
-
+tags: OS, Interrupt
 ---
-
-# Operating System
 
 # Chapter 1. Introduction
 
