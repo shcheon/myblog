@@ -1,6 +1,6 @@
 ---
 title: "Operating System 정리"
-last_modified_at: 2021-10-16
+last_modified_at: 2021-10-22
 categories:
   - OperatingSystem
 tags: OS, Interrupt
