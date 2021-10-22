@@ -60,6 +60,32 @@ tags: OS, Interrupt
 
 ![image](https://user-images.githubusercontent.com/80370113/137736563-7b8839a0-c9e4-41d7-9b85-e4edcc3b0635.png)
 
+## 1.2.2 Storage Structure
+
+- CPU는 메인 메모리에 적재된 프로그램의 명령어를 읽어와 실행함
+
+- 컴퓨터가 켜질 때 가장 먼저 실행되는 프로그램을 Bootstrap Program이라 하고, 주로 운영체제를 메인 메모리로 로드하는 역활을 함
+
+- RAM은 전원이 차단되면 내용이 삭제되는 휘발성이 있음
+
+- EEPROM은 전원이 차단되어도, 내용이 삭제되지 않고, ROM에 탑재된 프로그램을 변경할 수 있으므로 주로 부트 스트랩 프로그램을 저장하는 용도로 사용됨
+
+- 프로그램 실행은 Fetch(메인 메모리에 저장된 명령어를 CPU의 Register로 인출하는 과정) -> Encode (명령어의 Operand를 메인메모리로부터 인출하여 Register에 저장 하는 과정) -> Execute (명령어와 Operand를 가지고 실행) 과정으로 실행됨 -> Store (명령어 실행 결과를 다시 메인 메모리에 저장함)
+
+- 폰노이만 구조 : CPU <-> Data Memory + Instruction Memory 
+
+- 하버드 구조 : Data Memory <->CPU <->Instruction Memory
+
+- 메인메모리의 휘발성으로 인해, 데이터 저장을 위한 비휘발성 저장장치를 사용함 (Secondary Storage)
+
+- CPU -> Register -> Cache -> Main Memory -> SSD -> HDD
+
+## 1.2.3 I/O Structure
+
+- CPU는 다양한 장치로부터 인터럽트 신호를 받고, 이를 처리함
+
+- 인터럽트로 인해 CPU에 부하가 많이 가는것을 해결하기 위해, DMA(Direct Memory Access) 기법을 사용함
+
 ## 1.3 컴퓨터 시스템 구성 (Computer-System Architecture)
 
 ## 1.4 OS 연산 (Operating-System Operation)
