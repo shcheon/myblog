@@ -88,6 +88,46 @@ tags: OS, Interrupt
 
 ## 1.3 컴퓨터 시스템 구성 (Computer-System Architecture)
 
+## 1.3.1 Single-Processor Systems
+
+- CPU 내에서 명령어를 실행할 수 있는 Core가 존재함
+
+- 장치들은 각각 마이크로프로세서, 컨트롤러를 가지고 명령어 처리를 수행함
+
+## 1.3.2 Multiprocessor Systems
+
+- CPU 가 2개인 컴퓨터 구조를 말함
+
+- 다수의 CPU는 메인메모리, 버스, 주변 장치들을 공유해서 사용함
+
+- 멀티 프로세서의 장점은 처리량의 증가
+
+- SMP (=Symmetric Multi Processing) : 각 CPU가 모든 Task를 처리함, 각 CPU가 Register, Cache를 가지고 있으며 메인 메모리를 공유하는 구조
+
+- 멀티 코어 : 하나의 CPU내에 다수의 Core가 존재,
+
+- 1개 코어를 가진 멀티 프로세서보다, 멀티 코어가 효율이 좋음 => 같은 Chip내에서 연산 결과를 공유하는것이 훨씬 빠름, 전력 소모량도 적음
+
+- 멀티 프로세서의 구조에서 CPU를 증가시키면, Bus와 같은 장치 사용에 대한 경쟁과 병목현상 발생 => 각 CPU마다 서로 연결하고, 각 CPU마다 로컬 메모리를 갖는 구조를 통해 해결가능(NUMA = non-uniform memory access)
+
+- Blade Server : 하나의 프레임 위에 프로세서 보드, I/O 보드, 네트워크 보드가 갖추어진 서버
+
+- Clustered System : 컴퓨터 간 LAN으로 엮여있고, Stroage를 공유하며 외부에서는 하나의 컴퓨터 처럼 동작하는 시스템
+
+  cf) Cluster는 비슷한 하드웨어끼리 LAN으로 묶인 시스템이지만, Cloud는 지리적으로 분산된 이기종 시스템끼리 묶일 수 있음
+
+- 고가용(High-Availability) 서비스를 구축할 때 클러스터 시스템으로 구축함
+
+- 클러스터를 통해 성능향상을 일어나지 않지만, 신뢰성을 향상시키므로서 안정적인 서비스를 제공함( graceful degradation 또는 fault tolerant라고도 함)
+
+- Symmetric clustering : 각 머신은 어플리케이션을 구동하고, 일부 머신에 장애가 발생하면, 다른 머신에서 해당 머신에서 실행하던 어플리케이션을 실행해주는 구조의 클러스터링. (머신간 서로 어플리케이션 모니터링) 
+
+- Asymmetric clustering : 하나의 머신은 어플리케이션을 구동하고, 다른 머신은 어플리케이션을 구동하는 머신을 모니터링하며, 장애가 발생시 즉시 구동될 수 있는 체계의 클러스터링. 
+
+- 클러스터 시스템으로 Fail-over를 구성할도 있지만, 성능 향상을 위한 병렬 컴퓨팅을 목적으로 사용되기도 함 ex) Oracle Real Application Cluster
+
+- SANs(=Storage Area Networks)를 통해 Storage를 클러스터링 하기도 함
+
 ## 1.4 OS 연산 (Operating-System Operation)
 
 ## 1.5 자원 관리 (Resource Management)
