@@ -4,7 +4,8 @@ last_modified_at: 2021-10-27
 categories: 
   - Programming
 tags:
-  - Clean Code, SOLID원칙
+  - Clean Code
+  - SOLID원칙
 ---
 
 # Clean Code란?
@@ -173,7 +174,7 @@ public boolean isAdult(int age){
 AS-IS
 class Person{
     public void doSomething(String action){
-		if("sleep".equals(action)) {
+		    if("sleep".equals(action)) {
             //do Sleep..
         } else if("work".equals(action)) {
             //do work
