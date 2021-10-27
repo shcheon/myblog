@@ -35,9 +35,7 @@ tags:
 
 3. Long Parameter List
 
-   - 과다한 매개변수; 루틴에 필요한 대부분을 매개변수를 사용해 전달하는 경우. 이해하기 어렵고, 다른 데이터가 필요할 때마다 
-
-     수정해야 함
+   - 과다한 매개변수; 루틴에 필요한 대부분을 매개변수를 사용해 전달하는 경우. 이해하기 어렵고, 다른 데이터가 필요할 때마다 수정해야 함
 
    - 개선 기법 : 매개변수 세트를 객체로 전환(Introduce Parameter Object), 객체를 통째로 전달(Preserve Whole Object), 매개변수 세트를 메서드로 전환(Replace Parameter with Method)
 
