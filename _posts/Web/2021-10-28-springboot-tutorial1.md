@@ -8,9 +8,7 @@ tags:
   - SpringBoot
 ---
 
-# 목표
-
-- "Hello World" RESTful 웹 서비스 만들기
+- SpringBoot로 RESTful 웹 서비스를 만드는 방법을 배워보자
 
 # What You Will Build
 
