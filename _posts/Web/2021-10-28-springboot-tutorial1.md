@@ -12,7 +12,7 @@ tags:
 
 - "Hello World" RESTful 웹 서비스 만들기
 
-## What You Will Build
+# What You Will Build
 
 - GET Request 를 처리하는 서비스 만들기
 
@@ -38,9 +38,7 @@ tags:
   {"id":1,"content":"Hello, User!"}
   ```
 
-  
-
-## What You Need
+# What You Need
 
 - 15분의 시간
 - 텍스트 에디터 또는 IDE
