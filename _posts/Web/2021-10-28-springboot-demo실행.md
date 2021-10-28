@@ -8,7 +8,7 @@ tags:
   - SpringBoot
 ---
 
-# SpringBoot DemoApplication 실행
+# SpringBoot 초기 프로젝트 설정
 
 - start.spring.io 사이트에서 demo project를 다운받는다
 - 아래와 같은 RestController를 추가한 후 실행, 참고로 RestController를 사용하기 위해 "spring-boot-starter-web" dependency가 추가되어야 한다
